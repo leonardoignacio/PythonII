@@ -4,6 +4,13 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
+def sobre(request):
+    return render(request, 'sobre.html')
+def servico(request):
+    return render(request, 'servicos.html')
+def veiculo(request):
+    return render(request, 'veiculo.html')
+
 def contato(request):
     context = {
         'nome':'MotorWeb',
